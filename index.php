@@ -21,36 +21,53 @@
         </li>
     </ul>
     <div class="relative shadow-2xl">
-    <img class="object-cover h-96 w-full opacity-25" src="/img/img3.jpg" alt="Image">
+    <img class="object-cover h-96 w-full opacity-30 md:h-128" src="/img/img3.jpg" alt="Image Of Mountain">
     <div class="absolute inset-0 flex flex-col items-center justify-center text-white">
-        <h1 class="text-4xl font-bold font-sans text-center"><span id="element"></span></h1>
+        <h1 class="text-4xl font-bold font-sans text-center mx-2 md:text-6xl"><span id="element"></span></h1>
         <div class="absolute bottom-0 flex justify-center space-x-8 w-full">
-            <a href ="https://github.com/AlanIsam"><img src="/img/github.png" href="https://github.com/AlanIsam" class="h-10 my-3" ></a>
-            <a href ="https://my.linkedin.com/in/alan-isam-34a596262"><img src="/img/linkedin.png" class="h-10 my-3" ></a>
-            <a href ="https://alanisam.itch.io/"><img src="/img/itchio.png" class="h-10 my-3" ></a>
+            <a href ="https://github.com/AlanIsam"><img src="/img/github.png" href="https://github.com/AlanIsam" class="h-10 my-3 hover:opacity-50" ></a>
+            <a href ="https://my.linkedin.com/in/alan-isam-34a596262"><img src="/img/linkedin.png" class="h-10 my-3 hover:opacity-50" ></a>
+            <a href ="https://alanisam.itch.io/"><img src="/img/itchio.png" class="h-10 my-3 hover:opacity-50" ></a>
         </div>
     </div>
 </div>
 
-<div class="flex flex-col md:flex-row items-center space-y-3 my-3 mx-3 md:space-y-0 md:space-x-2 text-xl">
-    <div class="bg-slate-600 w-full md:w-1/2 h-72 text-white md:mb-0">Content</div>
-    <div class="bg-slate-600 w-full md:w-1/2 h-72 text-white">Content</div>
+<div class=" bg-slate-700 flex flex-col md:flex-row items-center space-y-1 drop-shadow-2xl md:space-y-0 md:space-x-2 text-xl">
+    <div class="content-center w-full mx-2 h-72 font-mono text-white text-center md:mb-0"><div class="text-6xl"><b>About Me</b></div><div class="text-xl md:text-2xl"><br>I am Alan from Malaysia, an aspiring Game Developer and Programmer<br>During my free time I like to delve myself into game development using Unity and learn web development</div></div>
 </div>
 
-<div class="flex flex-col md:flex-row items-center space-y-3 my-3 mx-3 md:space-y-0 md:space-x-2 text-xl">
-    <div class="bg-slate-600 w-full md:w-1/2 h-72 text-white md:mb-0">Content</div>
-    <div class="bg-slate-600 w-full md:w-1/2 h-72 text-white">Content</div>
+<div class=" flex flex-col md:flex-row items-center md:space-y-0 md:space-x-2 text-xl">
+    <div class=" content-center w-full h-36 font-mono text-white text-center md:mb-0"><div class="text-5xl md:text-6xl"><b>Past Project</b></div><div class="text-xl md:text-2xl"><br></div></div>
+</div>
+
+<div class="flex flex-col md:flex-row items-center md:space-y-0 md:space-x-2 text-xl mx-auto w-full">
+    <div class="relative flex-grow my-2">
+        <a href="https://alanisam.itch.io/castle-crawler" class="relative block">
+            <img src="/img/games1.png" class="object-fit w-full h-max">
+            <div class="bg-black absolute inset-0 flex items-center justify-center opacity-50"></div>
+            <p class="absolute inset-0 flex items-center justify-center text-white hover:opacity-70 text-4xl"><b>Castle Crawler</b></p>
+        </a>
+    </div>
+    <div class="relative flex-grow my-2">
+        <a href="https://alanisam.itch.io/prison-sneak-out" class="relative block">
+            <img src="/img/games2.png" class="object-fit w-full h-max">
+            <div class="bg-black absolute inset-0 flex items-center justify-center opacity-50"></div>
+            <p class="absolute inset-0 flex items-center justify-center text-white hover:opacity-70 text-4xl"><b>Prison Breakout</b></p>
+        </a>
+    </div>
+    <div class="relative flex-grow my-2">
+        <a href="https://alanisam.itch.io/prison-sneak-out" class="relative block">
+            <img src="/img/games3.png" class="object-fit w-full h-max">
+            <div class="bg-black absolute inset-0 flex items-center justify-center opacity-50"></div>
+            <p class="absolute inset-0 flex items-center justify-center text-white hover:opacity-70 text-4xl"><b>Bamto!</b></p>
+        </a>
+    </div>
 </div>
 
 
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   <script src="app.js"></script>
-  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
- <script>
- const typed = new Typed('#element', {
-    strings: ['Hello my name is Alan Isam <br> I am a Web Developer!'],
-    typeSpeed: 40,
-  });</script>
 </body>
 
 </html>
