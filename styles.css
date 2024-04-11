@@ -550,22 +550,14 @@ video {
   bottom: 0px;
 }
 
-.z-0 {
-  z-index: 0;
-}
-
-.z-10 {
-  z-index: 10;
-}
-
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
 
-.mx-3 {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .my-2 {
@@ -578,9 +570,18 @@ video {
   margin-bottom: 0.75rem;
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
+.my-20 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.my-12 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
 }
 
 .block {
@@ -595,8 +596,16 @@ video {
   height: 2.5rem;
 }
 
+.h-36 {
+  height: 9rem;
+}
+
 .h-72 {
   height: 18rem;
+}
+
+.h-96 {
+  height: 24rem;
 }
 
 .h-max {
@@ -604,16 +613,12 @@ video {
   height: max-content;
 }
 
-.h-128 {
-  height: 32rem;
+.h-12 {
+  height: 3rem;
 }
 
-.h-96 {
-  height: 24rem;
-}
-
-.h-36 {
-  height: 9rem;
+.h-20 {
+  height: 5rem;
 }
 
 .w-full {
@@ -660,11 +665,6 @@ video {
 
 .rounded {
   border-radius: 0.25rem;
-}
-
-.bg-slate-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
 }
 
 .bg-black {
@@ -731,11 +731,6 @@ video {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -743,6 +738,11 @@ video {
 
 .text-5xl {
   font-size: 3rem;
+  line-height: 1;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
   line-height: 1;
 }
 
@@ -756,11 +756,6 @@ video {
   line-height: 2rem;
 }
 
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -770,29 +765,12 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
 .opacity-30 {
   opacity: 0.3;
 }
 
 .opacity-50 {
   opacity: 0.5;
-}
-
-.opacity-100 {
-  opacity: 1;
-}
-
-.opacity-70 {
-  opacity: 0.7;
-}
-
-.opacity-0 {
-  opacity: 0;
 }
 
 .shadow-2xl {
@@ -811,20 +789,8 @@ video {
   background-color: rgb(51 65 85 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-opacity-40:hover {
-  --tw-bg-opacity: 0.4;
-}
-
-.hover\:opacity-20:hover {
-  opacity: 0.2;
-}
-
 .hover\:opacity-50:hover {
   opacity: 0.5;
-}
-
-.hover\:opacity-40:hover {
-  opacity: 0.4;
 }
 
 .hover\:opacity-70:hover {
@@ -838,10 +804,6 @@ video {
 
   .md\:inline-block {
     display: inline-block;
-  }
-
-  .md\:h-96 {
-    height: 24rem;
   }
 
   .md\:h-128 {
@@ -873,16 +835,6 @@ video {
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
-  }
-
-  .md\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
-  }
-
-  .md\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 
   .md\:text-6xl {
