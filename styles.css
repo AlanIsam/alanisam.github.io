@@ -214,6 +214,87 @@ section { padding: 72px 24px; }
   border-radius: 999px;
 }
 
+/* ---------- Cybersecurity / HackTheBox ---------- */
+
+:root {
+  --htb-green: #9fef00;
+  --htb-dark: #0f140f;
+}
+
+.htb-section {
+  position: relative;
+  background: var(--htb-dark);
+  border-top: 1px solid #1c2b1c;
+  border-bottom: 1px solid #1c2b1c;
+  overflow: hidden;
+}
+
+.htb-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(159, 239, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(159, 239, 0, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 30%, black, transparent);
+  pointer-events: none;
+}
+
+.htb-section .wrap { position: relative; }
+
+.htb-section .section-head .eyebrow { color: var(--htb-green); }
+
+.htb-card {
+  max-width: 760px;
+  margin: 0 auto;
+  background: linear-gradient(180deg, #131a13, #0c100c);
+  border: 1px solid #23361f;
+  border-radius: 18px;
+  padding: 36px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: border-color 0.15s, transform 0.15s;
+}
+
+.htb-card:hover {
+  border-color: var(--htb-green);
+  transform: translateY(-4px);
+}
+
+.htb-icon-wrap img { width: 84px; height: 84px; flex-shrink: 0; }
+
+.htb-info { flex: 1; min-width: 220px; }
+
+.htb-info .htb-handle {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--white);
+  margin: 0 0 6px;
+}
+
+.htb-info .htb-role {
+  font-size: 14.5px;
+  color: #8aa08a;
+  margin: 0 0 18px;
+}
+
+.htb-cta {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--htb-dark);
+  background: var(--htb-green);
+  padding: 11px 20px;
+  border-radius: 8px;
+  transition: filter 0.15s;
+}
+
+.htb-cta:hover { filter: brightness(1.1); }
+
 /* ---------- Project cards ---------- */
 
 .grid {
