@@ -1,91 +1,200 @@
-
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alan's Personal Site</title>
+    <title>Alan Isam — Game Developer &amp; Full-Stack Programmer</title>
+    <meta name="description" content="Alan Isam's personal site — game dev projects, itch.io games, and full-stack apps built with Expo, Next.js, and Supabase.">
     <link href="styles.css" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
+<body>
 
-<body class="bg-gradient-to-r from-slate-900 to-slate-900">
-    <ul class="bg-gradient-to-r from-slate-900 to-indigo-900 flex flex-col md:flex-row items-center justify-center p-3 space-y-3 md:space-y-0 md:space-x-8 text-xl">
+    <nav class="nav">
+        <div class="wrap">
+            <a href="#" class="nav-brand">Alan Isam</a>
+            <ul class="nav-links">
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-        <li>
-            <a href="/blog/blog.html" class="text-white font-bold font-mono hover:bg-slate-700 rounded py-0.5 px-2 block md:inline-block">Blog</a>
-        </li>
-        <li>
-            <a href="#" class="text-white font-bold font-mono hover:bg-slate-700 rounded py-0.5 px-2 block md:inline-block">Contact</a>
-        </li>
-    </ul>
-    <div class="relative shadow-2xl">
-        <img class="object-cover h-96 w-full opacity-30 md:h-128" src="./img/img3.jpg" alt="Image Of Mountain">
-        <div class="absolute inset-0 flex flex-col items-center justify-center text-white">
-            <h1 class="text-4xl font-bold font-sans text-center mx-2 md:text-6xl"><span id="element"></span></h1>
-            <div class="absolute bottom-0 flex justify-center space-x-8 w-full">
-                <a href="https://github.com/AlanIsam"><img src="./img/github.png" href="https://github.com/AlanIsam" class="h-10 my-3 hover:opacity-50"></a>
-                <a href="https://my.linkedin.com/in/alan-isam-34a596262"><img src="./img/linkedin.png" class="h-10 my-3 hover:opacity-50"></a>
-                <a href="https://alanisam.itch.io/"><img src="./img/itchio.png" class="h-10 my-3 hover:opacity-50"></a>
-            </div>
+    <header class="hero">
+        <h1><span id="element"></span></h1>
+        <p class="hero-sub">I build realtime apps, AI-assisted tools, and 2D games — from Supabase-backed chat apps to hackathon builds to Unity platformers.</p>
+        <div class="social-row">
+            <a href="https://github.com/AlanIsam" aria-label="GitHub"><img src="./img/github.png" alt=""></a>
+            <a href="https://my.linkedin.com/in/alan-isam-34a596262" aria-label="LinkedIn"><img src="./img/linkedin.png" alt=""></a>
+            <a href="https://alan0226.itch.io/" aria-label="itch.io"><img src="./img/itchio.png" alt=""></a>
+            <a href="https://twitter.com/AlanIsamDev" aria-label="Twitter"><img src="./img/Twitter.png" alt=""></a>
         </div>
-    </div>
-<br>
-    <div class=" flex flex-col md:flex-row items-center space-y-1 drop-shadow-2xl md:space-y-0 md:space-x-2 text-xl">
-        <div class="content-center w-full mx-2 h-72 font-mono text-white text-center md:mb-0">
-            <div class="text-6xl"><b>About Me</b></div>
-            <div class="text-xl md:text-2xl"><br>I am Alan from Malaysia, a Game Developer and Programmer<br>During my free time I like to delve myself into game development using Unity and learn web development!
-            I also love to explore in a little bit of cybersecurity domain</div>
-        </div>
-    </div>
-<br>
-    <br>
-    <div class=" flex flex-col md:flex-row items-center md:space-y-0 md:space-x-2 text-xl">
-        <div class=" content-center w-full h-36 font-mono text-white text-center md:mb-0">
-            <div class="text-5xl md:text-6xl"><b>Past Project</b></div>
-        </div>
-    </div>
+    </header>
 
-    <div class="flex flex-col md:flex-row items-center md:space-y-0 md:space-x-2 text-xl mx-auto w-full">
-        <div class="relative flex-grow my-2">
-            <a href="https://alanisam.itch.io/castle-crawler" class="relative block">
-                <img src="./img/games1.png" class="object-fit w-full h-max">
-                <div class="bg-black absolute inset-0 flex items-center justify-center opacity-50"></div>
-            </a>
-        </div>
-        <div class="relative flex-grow my-2">
-            <a href="https://alanisam.itch.io/prison-sneak-out" class="relative block">
-                <img src="./img/games2.png" class="object-fit w-full h-max">
-                <div class="bg-black absolute inset-0 flex items-center justify-center opacity-50"></div>
-            </a>
-        </div>
-        <div class="relative flex-grow my-2">
-            <a href="https://alan0226.itch.io/bamto" class="relative block">
-                <img src="./img/games3.png" class="object-fit w-full h-max">
-                <div class="bg-black absolute inset-0 flex items-center justify-center opacity-50"></div>
-            </a>
-        </div>
-    </div>
-
-    <div class="  flex flex-col md:flex-row items-center space-y-1 drop-shadow-2xl md:space-y-0 md:space-x-2 text-xl">
-        <div class=" w-full mx-2 my-12 h-72 font-mono text-white text-center md:mb-0">
-            <div class="text-6xl"><b>Contact Me</b>
-                <div class="absolute inset-0 flex flex-col items-center justify-center text-white">
-                    <div class="absolute inset-0 flex items-center justify-center space-x-8 w-full">
-                        <a href="https://twitter.com/AlanIsamDev" class="flex items-center my-3 hover:opacity-50">
-                            <img src="./img/Twitter.png" class="h-12" alt="Twitter">
-                            <span class="ml-2 text-2xl">Twitter</span>
-                        </a>
-                    </div>
-
+    <section class="about">
+        <div class="wrap">
+            <div class="about-body">
+                <p>I'm <strong>Alan</strong>, from Malaysia — a game developer and programmer. I split my time between Unity game jams and building full-stack apps: realtime chat, AI-assisted tools, and dashboards deployed on Google Cloud Run. I also dabble in cybersecurity on the side.</p>
+                <div class="chip-row">
+                    <span class="chip">React Native / Expo</span>
+                    <span class="chip">Next.js</span>
+                    <span class="chip">Supabase</span>
+                    <span class="chip">Prisma</span>
+                    <span class="chip">Google Gemini API</span>
+                    <span class="chip">Docker &amp; Cloud Run</span>
+                    <span class="chip">Unity</span>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
+    <section id="projects">
+        <div class="wrap">
+            <div class="section-head">
+                <span class="eyebrow">Software</span>
+                <h2>Things I've built</h2>
+                <p>Full-stack apps — from side projects to a 24-hour hackathon build.</p>
+            </div>
 
+            <div class="grid">
+                <div class="card">
+                    <div class="card-top">
+                        <div class="card-icon">&#128172;</div>
+                        <span class="badge dev">In development</span>
+                    </div>
+                    <h3>Randau</h3>
+                    <p class="desc">A realtime chat app with groups, presence, typing indicators, and push notifications — built on Expo/React Native with a Supabase backend.</p>
+                    <div class="tech-row">
+                        <span>Expo</span><span>React Native</span><span>Supabase</span><span>Postgres</span>
+                    </div>
+                    <div class="card-links">
+                        <a href="randau/">Visit Randau</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-top">
+                        <div class="card-icon">&#127973;</div>
+                        <span class="badge hackathon">GDG Hackathon</span>
+                    </div>
+                    <h3>TrimedAI</h3>
+                    <p class="desc">An AI-powered hospital triage &amp; registration system — conversational intake, image-based symptom assessment, and risk-based routing via the Gemini API.</p>
+                    <div class="tech-row">
+                        <span>PHP</span><span>Gemini API</span><span>Docker</span>
+                    </div>
+                    <div class="card-links">
+                        <a href="https://github.com/AlanIsam/GDG-hackathon">View on GitHub</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-top">
+                        <div class="card-icon">&#128241;</div>
+                        <span class="badge live">Live</span>
+                    </div>
+                    <h3>QR Attendance</h3>
+                    <p class="desc">A QR-based attendance system for schools — auto-refreshing codes to stop screenshot sharing, a live check-in feed, and CSV export.</p>
+                    <div class="tech-row">
+                        <span>Next.js</span><span>Prisma</span><span>Cloud Run</span>
+                    </div>
+                    <div class="card-links">
+                        <a href="https://qr-attendance-582538673206.asia-southeast1.run.app/login">Open live demo</a>
+                    </div>
+                    <p class="demo-note">&#128274; Login-protected — ask me for demo access.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-top">
+                        <div class="card-icon">&#127946;</div>
+                        <span class="badge live">Live</span>
+                    </div>
+                    <h3>RenanganApp — Swim Tracker</h3>
+                    <p class="desc">A personal swim &amp; strength training tracker with AI-generated weekly workout plans, pace trends, and training volume charts.</p>
+                    <div class="tech-row">
+                        <span>Next.js</span><span>Gemini API</span><span>Recharts</span>
+                    </div>
+                    <div class="card-links">
+                        <a href="https://renanganapp-582538673206.asia-southeast1.run.app/plan">Open live demo</a>
+                    </div>
+                    <p class="demo-note">&#128274; Password-protected — ask me for demo access.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="games" class="games-section">
+        <div class="wrap">
+            <div class="section-head">
+                <span class="eyebrow">// Game Dev</span>
+                <h2 class="games-title">PRESS START</h2>
+                <p>2D games built in Unity, shipped on itch.io.</p>
+            </div>
+
+            <div class="grid">
+                <div class="game-card">
+                    <div class="game-thumb">
+                        <span class="game-tag">Platformer</span>
+                        <img src="./img/games1.png" alt="Castle Crawler screenshot">
+                    </div>
+                    <div class="game-body">
+                        <h3>Castle Crawler</h3>
+                        <p>A 2D platformer where light is your enemy.</p>
+                        <a class="game-play" href="https://alanisam.itch.io/castle-crawler">PLAY &#9654;</a>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <div class="game-thumb">
+                        <span class="game-tag">Escape / Adventure</span>
+                        <img src="./img/games2.png" alt="Prison Sneak Out screenshot">
+                    </div>
+                    <div class="game-body">
+                        <h3>Prison Sneak Out!</h3>
+                        <p>You're trapped inside a prison — find your way out.</p>
+                        <a class="game-play" href="https://alanisam.itch.io/prison-sneak-out">PLAY &#9654;</a>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <div class="game-thumb">
+                        <span class="game-tag">Sarawak Game Jam 2023 winner</span>
+                        <img src="./img/games3.png" alt="BamTo! screenshot">
+                    </div>
+                    <div class="game-body">
+                        <h3>BamTo!</h3>
+                        <p>A 2D artillery game where you shoot food at your enemy bento.</p>
+                        <a class="game-play" href="https://alan0226.itch.io/bamto">PLAY &#9654;</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="games-more">
+                <a href="https://alan0226.itch.io/">MORE ON ITCH.IO &#8594;</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="wrap">
+            <div class="section-head">
+                <span class="eyebrow">Get in touch</span>
+                <h2>Contact Me</h2>
+                <p>Open to freelance work, collabs, and game jams.</p>
+            </div>
+            <div class="contact-links">
+                <a href="https://github.com/AlanIsam"><img src="./img/github.png" alt="">GitHub</a>
+                <a href="https://my.linkedin.com/in/alan-isam-34a596262"><img src="./img/linkedin.png" alt="">LinkedIn</a>
+                <a href="https://alan0226.itch.io/"><img src="./img/itchio.png" alt="">itch.io</a>
+                <a href="https://twitter.com/AlanIsamDev"><img src="./img/Twitter.png" alt="">Twitter</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2026 Alan Isam. Built with plain HTML, CSS &amp; typed.js.
+    </footer>
 
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="app.js"></script>
