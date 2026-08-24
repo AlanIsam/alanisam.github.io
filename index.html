@@ -5,18 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alan Isam | Game Developer &amp; Full-Stack Programmer</title>
-    <meta name="description" content="Alan Isam's personal site: game dev projects, itch.io games, and full-stack apps built with Expo, Next.js, and Supabase.">
+    <meta name="description" content="Alan Isam's personal site: game dev projects, Unity 2D games, itch.io releases, and full-stack apps built with Expo, Next.js, and Supabase.">
 
+    <!-- Favicon & Touch Icon -->
+    <link rel="icon" type="image/png" href="./img/htb-icon.png">
+    <link rel="apple-touch-icon" href="./img/htb-icon.png">
+
+    <!-- Open Graph / WhatsApp / Facebook Link Preview -->
     <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Alan Isam Network">
     <meta property="og:url" content="https://alanisam.github.io/">
-    <meta property="og:title" content="Alan Isam | Game Developer & Full-Stack Programmer">
-    <meta property="og:description" content="Game dev projects, itch.io games, and full-stack apps built with Expo, Next.js, and Supabase.">
+    <meta property="og:title" content="Alan Isam | Game Developer &amp; Full-Stack Programmer">
+    <meta property="og:description" content="Game dev projects, Unity 2D games, itch.io releases, and full-stack apps built with Expo, Next.js, Supabase, and cybersecurity labs.">
     <meta property="og:image" content="https://alanisam.github.io/img/og-banner.png">
+    <meta property="og:image:secure_url" content="https://alanisam.github.io/img/og-banner.png">
+    <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Alan Isam Portfolio Preview">
+
+    <!-- Twitter Card Link Preview -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Alan Isam | Game Developer & Full-Stack Programmer">
-    <meta name="twitter:description" content="Game dev projects, itch.io games, and full-stack apps built with Expo, Next.js, and Supabase.">
+    <meta name="twitter:site" content="@AlanIsamDev">
+    <meta name="twitter:creator" content="@AlanIsamDev">
+    <meta name="twitter:title" content="Alan Isam | Game Developer &amp; Full-Stack Programmer">
+    <meta name="twitter:description" content="Game dev projects, Unity 2D games, itch.io releases, and full-stack apps built with Expo, Next.js, Supabase, and cybersecurity labs.">
     <meta name="twitter:image" content="https://alanisam.github.io/img/og-banner.png">
 
     <link href="styles.css" rel="stylesheet">
@@ -24,214 +37,299 @@
 
 <body>
 
-    <nav class="nav">
-        <div class="wrap">
-            <a href="#" class="nav-brand">Alan Isam</a>
-            <ul class="nav-links">
-                <li><a href="#security">Security</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#games">Games</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+    <div class="cn-shell">
+        <!-- Top Chrome Header -->
+        <header class="cn-header">
+            <div class="cn-brand">
+                <div class="cn-logo-box">
+                    <div class="cn-logo-square black">A</div>
+                    <div class="cn-logo-square white">I</div>
+                </div>
+                <div class="cn-brand-title">ALAN ISAM NETWORK</div>
+            </div>
+        </header>
 
-    <header class="hero">
-        <h1><span id="element"></span></h1>
-        <p class="hero-sub">I build realtime apps, AI-assisted tools, and 2D games, from Supabase-backed chat apps to hackathon builds to Unity platformers.</p>
-        <div class="social-row">
-            <a href="https://github.com/AlanIsam" aria-label="GitHub"><img src="./img/github.png" alt=""></a>
-            <a href="https://my.linkedin.com/in/alan-isam-34a596262" aria-label="LinkedIn"><img src="./img/linkedin.png" alt=""></a>
-            <a href="https://alan0226.itch.io/" aria-label="itch.io"><img src="./img/itchio.png" alt=""></a>
-            <a href="https://twitter.com/AlanIsamDev" aria-label="Twitter"><img src="./img/Twitter.png" alt=""></a>
-            <a href="https://profile.hackthebox.com/profile/019d1546-71bf-71b2-b7ad-6afbb503f068" aria-label="HackTheBox"><img src="./img/htb-icon.png" alt=""></a>
-        </div>
-    </header>
+        <!-- Skewed Navigation Tabs -->
+        <nav class="cn-nav-bar">
+            <a href="#security" class="cn-tab blue"><span>SECURITY</span></a>
+            <a href="#projects" class="cn-tab red"><span>SOFTWARE</span></a>
+            <a href="#games" class="cn-tab teal"><span>GAMES</span></a>
+            <a href="#contact" class="cn-tab orange"><span>CONTACT</span></a>
+        </nav>
 
-    <section class="about">
-        <div class="wrap">
-            <div class="about-body">
-                <p>I'm <strong>Alan</strong>, from Malaysia, a game developer and programmer. I split my time between Unity game jams, building full-stack apps such as realtime chat and AI-assisted tools deployed on Google Cloud Run, and practicing offensive security on HackTheBox.</p>
-                <div class="chip-row">
-                    <span class="chip">React Native / Expo</span>
-                    <span class="chip">Next.js</span>
-                    <span class="chip">Supabase</span>
-                    <span class="chip">Prisma</span>
-                    <span class="chip">Google Gemini API</span>
-                    <span class="chip">Google Cloud Run</span>
-                    <span class="chip">Docker</span>
-                    <span class="chip">Unity</span>
+        <!-- Marquee Ticker Bar -->
+        <div class="cn-ticker-bar">
+            <div class="cn-ticker-title">TV SCHEDULE</div>
+            <div class="cn-ticker-content">
+                <div class="cn-ticker-track">
+                    <span><b>NOW PLAYING:</b> Alan Isam Portfolio</span>
+                    <span><b>NEXT:</b> Randau Realtime Chat App</span>
+                    <span><b>UP NEXT:</b> TrimedAI GDG Hackathon Build</span>
+                    <span><b>LATER:</b> Castle Crawler 2D Platformer</span>
+                    <span><b>LABS:</b> HackTheBox Security Profile (@Alanis)</span>
+                    <span><b>NOW PLAYING:</b> Alan Isam Portfolio</span>
+                    <span><b>NEXT:</b> Randau Realtime Chat App</span>
+                    <span><b>UP NEXT:</b> TrimedAI GDG Hackathon Build</span>
+                    <span><b>LATER:</b> Castle Crawler 2D Platformer</span>
+                    <span><b>LABS:</b> HackTheBox Security Profile (@Alanis)</span>
                 </div>
             </div>
         </div>
-    </section>
 
-    <section id="security" class="htb-section">
-        <div class="wrap">
-            <div class="section-head">
-                <span class="eyebrow">// Cybersecurity</span>
-                <h2>Breaking things on HackTheBox</h2>
-                <p>Alongside building apps, I train in offensive security: web exploitation, privilege escalation, and vulnerability research.</p>
+        <!-- Main Portal Container -->
+        <main class="cn-portal-layout">
+
+            <!-- Main Content Column -->
+            <div class="cn-main-col">
+
+                <!-- Hero Section -->
+                <section class="cn-hero-card">
+                    <h1 class="cn-hero-h1"><span id="element"></span></h1>
+                    <p class="cn-hero-desc">
+                        I'm <strong>Alan</strong> from Malaysia, a game developer and programmer. I split my time between Unity 2D game jams, building full-stack apps with Expo, Next.js, and Supabase deployed on Google Cloud Run, and practicing web exploitation on HackTheBox.
+                    </p>
+
+                    <div class="cn-skills-bar">
+                        <span class="cn-skill-chip">React Native / Expo</span>
+                        <span class="cn-skill-chip">Next.js</span>
+                        <span class="cn-skill-chip">Supabase</span>
+                        <span class="cn-skill-chip">Prisma</span>
+                        <span class="cn-skill-chip">Google Gemini API</span>
+                        <span class="cn-skill-chip">Cloud Run</span>
+                        <span class="cn-skill-chip">Docker</span>
+                        <span class="cn-skill-chip">Unity</span>
+                    </div>
+
+                    <div class="cn-social-row">
+                        <a href="https://github.com/AlanIsam" class="cn-btn-social" aria-label="GitHub">
+                            <img src="./img/github.png" alt=""> GitHub
+                        </a>
+                        <a href="https://my.linkedin.com/in/alan-isam-34a596262" class="cn-btn-social" aria-label="LinkedIn">
+                            <img src="./img/linkedin.png" alt=""> LinkedIn
+                        </a>
+                        <a href="https://alan0226.itch.io/" class="cn-btn-social" aria-label="itch.io">
+                            <img src="./img/itchio.png" alt=""> itch.io
+                        </a>
+                        <a href="https://twitter.com/AlanIsamDev" class="cn-btn-social" aria-label="Twitter">
+                            <img src="./img/Twitter.png" alt=""> Twitter
+                        </a>
+                        <a href="https://profile.hackthebox.com/profile/019d1546-71bf-71b2-b7ad-6afbb503f068" class="cn-btn-social" aria-label="HackTheBox">
+                            <img src="./img/htb-icon.png" alt=""> HackTheBox
+                        </a>
+                    </div>
+                </section>
+
+                <!-- Cybersecurity Section -->
+                <section id="security">
+                    <div class="cn-section-head">
+                        <h2 class="cn-section-title">CYBERSECURITY</h2>
+                        <div class="cn-section-line"></div>
+                    </div>
+
+                    <div class="cn-htb-box">
+                        <div class="cn-htb-info">
+                            <div class="cn-htb-icon">
+                                <img src="./img/htb-icon.png" alt="HackTheBox">
+                            </div>
+                            <div class="cn-htb-text">
+                                <h3>HackTheBox Lab Profile (@Alanis)</h3>
+                                <p>Web application security, penetration testing, privilege escalation &amp; vulnerability research.</p>
+                            </div>
+                        </div>
+                        <a href="https://profile.hackthebox.com/profile/019d1546-71bf-71b2-b7ad-6afbb503f068" class="cn-btn-action">VIEW HTB PROFILE ▶</a>
+                    </div>
+                </section>
+
+                <!-- Software Projects Section -->
+                <section id="projects">
+                    <div class="cn-section-head">
+                        <h2 class="cn-section-title">FEATURED SOFTWARE</h2>
+                        <div class="cn-section-line"></div>
+                    </div>
+
+                    <div class="cn-grid">
+                        <div class="cn-card">
+                            <div class="cn-card-head">
+                                <h3 class="cn-card-title">Randau</h3>
+                                <span class="cn-badge dev">In Dev</span>
+                            </div>
+                            <div class="cn-card-body">
+                                <p class="cn-card-desc">Realtime chat app with groups, presence, typing indicators, and push notifications, built on Expo and Supabase.</p>
+                                <div class="cn-tech-row">
+                                    <span>Expo</span><span>React Native</span><span>Supabase</span><span>Postgres</span>
+                                </div>
+                                <a href="randau/" class="cn-btn-action">VISIT RANDAU ▶</a>
+                            </div>
+                        </div>
+
+                        <div class="cn-card">
+                            <div class="cn-card-head">
+                                <h3 class="cn-card-title">TrimedAI</h3>
+                                <span class="cn-badge hackathon">GDG Hackathon</span>
+                            </div>
+                            <div class="cn-card-body">
+                                <p class="cn-card-desc">AI-powered hospital triage &amp; registration system with conversational intake and Gemini API image assessment.</p>
+                                <div class="cn-tech-row">
+                                    <span>PHP</span><span>Gemini API</span><span>Docker</span>
+                                </div>
+                                <a href="https://github.com/AlanIsam/GDG-hackathon" class="cn-btn-action">VIEW GITHUB ▶</a>
+                            </div>
+                        </div>
+
+                        <div class="cn-card">
+                            <div class="cn-card-head">
+                                <h3 class="cn-card-title">QR Attendance</h3>
+                                <span class="cn-badge live">Live Demo</span>
+                            </div>
+                            <div class="cn-card-body">
+                                <p class="cn-card-desc">QR-based school attendance system with auto-refreshing codes, live check-in feeds, and CSV export.</p>
+                                <div class="cn-tech-row">
+                                    <span>Next.js</span><span>Prisma</span><span>Cloud Run</span>
+                                </div>
+                                <a href="https://qr-attendance-582538673206.asia-southeast1.run.app/login" class="cn-btn-action">OPEN DEMO ▶</a>
+                            </div>
+                        </div>
+
+                        <div class="cn-card">
+                            <div class="cn-card-head">
+                                <h3 class="cn-card-title">RenanganApp</h3>
+                                <span class="cn-badge live">Live Demo</span>
+                            </div>
+                            <div class="cn-card-body">
+                                <p class="cn-card-desc">Personal swim &amp; strength tracker featuring AI weekly workout plans and training volume charts.</p>
+                                <div class="cn-tech-row">
+                                    <span>Next.js</span><span>Gemini API</span><span>Recharts</span>
+                                </div>
+                                <a href="https://renanganapp-582538673206.asia-southeast1.run.app/plan" class="cn-btn-action">OPEN DEMO ▶</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Unity Games Section -->
+                <section id="games">
+                    <div class="cn-section-head">
+                        <h2 class="cn-section-title">PRESS START — UNITY GAMES</h2>
+                        <div class="cn-section-line"></div>
+                    </div>
+
+                    <div class="cn-grid">
+                        <div class="cn-game-card">
+                            <div class="cn-game-thumb">
+                                <span class="cn-game-tag">PLATFORMER</span>
+                                <img src="./img/games1.png" alt="Castle Crawler screenshot">
+                            </div>
+                            <div class="cn-game-body">
+                                <h3 class="cn-game-title">Castle Crawler</h3>
+                                <p class="cn-game-desc">A 2D platformer where light is your enemy.</p>
+                                <a href="https://alanisam.itch.io/castle-crawler" class="cn-btn-action">PLAY ▶</a>
+                            </div>
+                        </div>
+
+                        <div class="cn-game-card">
+                            <div class="cn-game-thumb">
+                                <span class="cn-game-tag">ESCAPE</span>
+                                <img src="./img/games2.png" alt="Prison Sneak Out screenshot">
+                            </div>
+                            <div class="cn-game-body">
+                                <h3 class="cn-game-title">Prison Sneak Out!</h3>
+                                <p class="cn-game-desc">Trapped inside a prison. Find your way out.</p>
+                                <a href="https://alanisam.itch.io/prison-sneak-out" class="cn-btn-action">PLAY ▶</a>
+                            </div>
+                        </div>
+
+                        <div class="cn-game-card">
+                            <div class="cn-game-thumb">
+                                <span class="cn-game-tag">JAM WINNER</span>
+                                <img src="./img/games3.png" alt="BamTo! screenshot">
+                            </div>
+                            <div class="cn-game-body">
+                                <h3 class="cn-game-title">BamTo!</h3>
+                                <p class="cn-game-desc">Sarawak Game Jam 2023 Best Use of Theme: shoot food at enemy bento.</p>
+                                <a href="https://alan0226.itch.io/bamto" class="cn-btn-action">PLAY ▶</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Contact Section -->
+                <section id="contact" style="text-align: center; margin-top: 10px;">
+                    <div class="cn-section-head">
+                        <h2 class="cn-section-title" style="margin: 0 auto;">GET IN TOUCH</h2>
+                    </div>
+                    <div class="cn-social-row" style="justify-content: center; margin-top: 12px;">
+                        <a href="https://github.com/AlanIsam" class="cn-btn-social"><img src="./img/github.png" alt=""> GitHub</a>
+                        <a href="https://my.linkedin.com/in/alan-isam-34a596262" class="cn-btn-social"><img src="./img/linkedin.png" alt=""> LinkedIn</a>
+                        <a href="https://alan0226.itch.io/" class="cn-btn-social"><img src="./img/itchio.png" alt=""> itch.io</a>
+                        <a href="https://twitter.com/AlanIsamDev" class="cn-btn-social"><img src="./img/Twitter.png" alt=""> Twitter</a>
+                    </div>
+                </section>
             </div>
 
-            <div class="htb-card">
-                <div class="htb-icon-wrap">
-                    <img src="./img/htb-icon.png" alt="HackTheBox">
-                </div>
-                <div class="htb-info">
-                    <p class="htb-handle">@Alanis</p>
-                    <p class="htb-role">HackTheBox -  web app security &amp; penetration testing</p>
-                    <a class="htb-cta" href="https://profile.hackthebox.com/profile/019d1546-71bf-71b2-b7ad-6afbb503f068">View HTB Profile &#8594;</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects">
-        <div class="wrap">
-            <div class="section-head">
-                <span class="eyebrow">Software</span>
-                <h2>Things I've built</h2>
-                <p>Full-stack apps ranging from side projects to a 24-hour hackathon build.</p>
-            </div>
-
-            <div class="grid">
-                <div class="card">
-                    <div class="card-top">
-                        <div class="card-icon">&#128172;</div>
-                        <span class="badge dev">In development</span>
+            <!-- Sidebar Column -->
+            <aside class="cn-sidebar">
+                <!-- HTB Lab Status Panel Widget -->
+                <div class="cn-panel">
+                    <div class="cn-panel-head">
+                        <h4 class="cn-panel-title">HTB LAB STATUS 🛡️</h4>
                     </div>
-                    <h3>Randau</h3>
-                    <p class="desc">A realtime chat app with groups, presence, typing indicators, and push notifications, built on Expo/React Native with a Supabase backend.</p>
-                    <div class="tech-row">
-                        <span>Expo</span><span>React Native</span><span>Supabase</span><span>Postgres</span>
-                    </div>
-                    <div class="card-links">
-                        <a href="randau/">Visit Randau</a>
+                    <div class="cn-panel-body">
+                        <div class="cn-htb-widget">
+                            <div class="cn-htb-widget-head">
+                                <img src="./img/htb-icon.png" alt="HackTheBox">
+                                <div>
+                                    <h5 class="cn-htb-widget-handle">@Alanis</h5>
+                                    <div class="cn-htb-widget-role">PENTEST / WEB SEC</div>
+                                </div>
+                            </div>
+                            <div class="cn-htb-status-badge">
+                                <span class="cn-htb-status-dot"></span> STATUS: ACTIVE LABBER
+                            </div>
+                            <ul class="cn-htb-spec-list">
+                                <li>Web App Exploitation</li>
+                                <li>Privilege Escalation</li>
+                                <li>Vulnerability Research</li>
+                                <li>CTF / Box Solving</li>
+                            </ul>
+                            <a href="https://profile.hackthebox.com/profile/019d1546-71bf-71b2-b7ad-6afbb503f068" class="cn-btn-action" style="width: 100%; display: block;">VIEW PROFILE ▶</a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="card">
-                    <div class="card-top">
-                        <div class="card-icon">&#127973;</div>
-                        <span class="badge hackathon">GDG Hackathon</span>
+                <!-- Navigation Index Menu Panel -->
+                <div class="cn-panel">
+                    <div class="cn-panel-head">
+                        <h4 class="cn-panel-title">INDEX MENU ◄►</h4>
                     </div>
-                    <h3>TrimedAI</h3>
-                    <p class="desc">An AI-powered hospital triage and registration system with conversational intake, image-based symptom assessment, and risk-based routing via the Gemini API.</p>
-                    <div class="tech-row">
-                        <span>PHP</span><span>Gemini API</span><span>Docker</span>
-                    </div>
-                    <div class="card-links">
-                        <a href="https://github.com/AlanIsam/GDG-hackathon">View on GitHub</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-top">
-                        <div class="card-icon">&#128241;</div>
-                        <span class="badge live">Live</span>
-                    </div>
-                    <h3>QR Attendance</h3>
-                    <p class="desc">A QR-based attendance system for schools, with auto-refreshing codes to stop screenshot sharing, a live check-in feed, and CSV export.</p>
-                    <div class="tech-row">
-                        <span>Next.js</span><span>Prisma</span><span>Cloud Run</span>
-                    </div>
-                    <div class="card-links">
-                        <a href="https://qr-attendance-582538673206.asia-southeast1.run.app/login">Open live demo</a>
-                    </div>
-                    <p class="demo-note">&#128274; Login-protected. Ask me for demo access.</p>
-                </div>
-
-                <div class="card">
-                    <div class="card-top">
-                        <div class="card-icon">&#127946;</div>
-                        <span class="badge live">Live</span>
-                    </div>
-                    <h3>RenanganApp: Swim Tracker</h3>
-                    <p class="desc">A personal swim &amp; strength training tracker with AI-generated weekly workout plans, pace trends, and training volume charts.</p>
-                    <div class="tech-row">
-                        <span>Next.js</span><span>Gemini API</span><span>Recharts</span>
-                    </div>
-                    <div class="card-links">
-                        <a href="https://renanganapp-582538673206.asia-southeast1.run.app/plan">Open live demo</a>
-                    </div>
-                    <p class="demo-note">&#128274; Password-protected. Ask me for demo access.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="games" class="games-section">
-        <div class="wrap">
-            <div class="section-head">
-                <span class="eyebrow">// Game Dev</span>
-                <h2 class="games-title">PRESS START</h2>
-                <p>2D games built in Unity, shipped on itch.io.</p>
-            </div>
-
-            <div class="grid">
-                <div class="game-card">
-                    <div class="game-thumb">
-                        <span class="game-tag">Platformer</span>
-                        <img src="./img/games1.png" alt="Castle Crawler screenshot">
-                    </div>
-                    <div class="game-body">
-                        <h3>Castle Crawler</h3>
-                        <p>A 2D platformer where light is your enemy.</p>
-                        <a class="game-play" href="https://alanisam.itch.io/castle-crawler">PLAY &#9654;</a>
+                    <div class="cn-panel-body">
+                        <div class="cn-side-menu">
+                            <a href="#security" class="cn-side-link"><span>SECURITY LABS</span> <span class="cn-side-num">[01]</span></a>
+                            <a href="#projects" class="cn-side-link"><span>SOFTWARE APPS</span> <span class="cn-side-num">[02]</span></a>
+                            <a href="#games" class="cn-side-link"><span>UNITY GAMES</span> <span class="cn-side-num">[03]</span></a>
+                            <a href="#contact" class="cn-side-link"><span>CONTACT</span> <span class="cn-side-num">[04]</span></a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="game-card">
-                    <div class="game-thumb">
-                        <span class="game-tag">Escape / Adventure</span>
-                        <img src="./img/games2.png" alt="Prison Sneak Out screenshot">
+                <!-- Award Spotlight Panel -->
+                <div class="cn-panel">
+                    <div class="cn-panel-head">
+                        <h4 class="cn-panel-title">AWARD 🏆</h4>
                     </div>
-                    <div class="game-body">
-                        <h3>Prison Sneak Out!</h3>
-                        <p>You're trapped inside a prison. Find your way out.</p>
-                        <a class="game-play" href="https://alanisam.itch.io/prison-sneak-out">PLAY &#9654;</a>
-                    </div>
-                </div>
-
-                <div class="game-card">
-                    <div class="game-thumb">
-                        <span class="game-tag">Sarawak Game Jam 2023 winner</span>
-                        <img src="./img/games3.png" alt="BamTo! screenshot">
-                    </div>
-                    <div class="game-body">
-                        <h3>BamTo!</h3>
-                        <p>A 2D artillery game where you shoot food at your enemy bento.</p>
-                        <a class="game-play" href="https://alan0226.itch.io/bamto">PLAY &#9654;</a>
+                    <div class="cn-panel-body" style="font-size: 12.5px; color: var(--cn-text-muted);">
+                        <strong style="color: #fff;">Sarawak Game Jam 2023</strong><br>
+                        Best Use of Theme for <em>BamTo!</em>
                     </div>
                 </div>
-            </div>
+            </aside>
 
-            <div class="games-more">
-                <a href="https://alan0226.itch.io/">MORE ON ITCH.IO &#8594;</a>
-            </div>
-        </div>
-    </section>
+        </main>
 
-    <section id="contact" class="contact">
-        <div class="wrap">
-            <div class="section-head">
-                <span class="eyebrow">Get in touch</span>
-                <h2>Contact Me</h2>
-            </div>
-            <div class="contact-links">
-                <a href="https://github.com/AlanIsam"><img src="./img/github.png" alt="">GitHub</a>
-                <a href="https://my.linkedin.com/in/alan-isam-34a596262"><img src="./img/linkedin.png" alt="">LinkedIn</a>
-                <a href="https://alan0226.itch.io/"><img src="./img/itchio.png" alt="">itch.io</a>
-                <a href="https://twitter.com/AlanIsamDev"><img src="./img/Twitter.png" alt="">Twitter</a>
-                <a href="https://profile.hackthebox.com/profile/019d1546-71bf-71b2-b7ad-6afbb503f068"><img src="./img/htb-icon.png" alt="">HackTheBox</a>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        &copy; 2026 Alan Isam. Built with plain HTML, CSS &amp; typed.js.
-    </footer>
+        <!-- Footer -->
+        <footer class="cn-footer">
+            <div>&copy; 2026 Alan Isam</div>
+        </footer>
+    </div>
 
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="app.js"></script>
